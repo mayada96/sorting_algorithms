@@ -1,71 +1,31 @@
-# 0x1B. C - Sorting algorithms & Big O
+# C - Sorting algorithms & Big O
 
+## About / synopsis
+An introduction to implementing multiple sorting algorithms separately, with -O text files for each algorithm listing their time complexity
 
----
-## Learning Objectives:bulb:
-What you should learn from this project:
+## Authors
 
-* At least four different sorting algorithms
-* What is the Big O notation, and how to evaluate the time complexity of an algorithm
-* How to select the best sorting algorithm for a given input
-* What is a stable sorting algorithm
+* Mayada Yousuf Mohamed *
+* Samuel Iyeh *
 
----
+## Built With
 
-### [0. Bubble sort](./0-bubble_sort.c)
-* Write a function that sorts an array of integers in ascending order using the Bubble sort algorithm
+* [c] - Betty formatting
 
+### Project contents
 
-### [1. Insertion sort](./1-insertion_sort_list.c)
-* Write a function that sorts a doubly linked list of integers in ascending order using the Insertion sort algorithm
-
-
-### [2. Selection sort](./2-selection_sort.c)
-* Write a function that sorts an array of integers in ascending order using the Selection sort algorithm
-
-
-### [3. Quick sort](./3-quick_sort.c)
-* Write a function that sorts an array of integers in ascending order using the Quick sort algorithm
-
-
-### [4. Shell sort - Knuth Sequence](./100-shell_sort.c)
-* Write a function that sorts an array of integers in ascending order using the Shell sort algorithm, using the Knuth sequence
-
-
-### [5. Cocktail shaker sort](./101-cocktail_sort_list.c)
-* Write a function that sorts a doubly linked list of integers in ascending order using the Cocktail shaker sort algorithm
-
-
-### [6. Counting sort](./102-counting_sort.c)
-* Write a function that sorts an array of integers in ascending order using the Counting sort algorithm
-
-
-### [7. Merge sort](./103-merge_sort.c)
-* Write a function that sorts an array of integers in ascending order using the Merge sort algorithm
-
-
-### [8. Heap sort ](./104-heap_sort.c)
-* Write a function that sorts an array of integers in ascending order using the Heap sort algorithm
-
-
-### [9. Radix sort](./105-radix_sort.c)
-* Write a function that sorts an array of integers in ascending order using the Radix sort algorithm
-
-
-### [10. Bitonic sort](./106-bitonic_sort.c)
-* Write a function that sorts an array of integers in ascending order using the Bitonic sort algorithm
-
-
-### [11. Quick Sort - Hoare Partition scheme](./107-quick_sort_hoare.c)
-* Write a function that sorts an array of integers in ascending order using the Quick sort algorithm
-
-
-### [12. Dealer](./1000-sort_deck.c)
-* Write a function that sorts a deck of cards.
-
----
-
-## Author
-* **Mayada Yousuf Mohamed**
-
-* **Samuel Iyeh**
+| File Name | Short Description |
+| --- | --- |
+|0-bubble_sort.c|An inefficient sorting algorithm that repeatedly swaps two values, the 'cursor' moving from left to right until the array is sorted|
+|1-insertion_sort_list.c|A stable sorting algorithm that is efficient with small data sets and works by inserting a new node into the correct position of a pre-sorted array|
+|2-selection_sort.c|Noted for simplicity, this algorithm typically performs worse than insertion sort, but has some performance advantages. It works by finding the smallest array item and adding it to the end of the sorted area of the array|
+|3-quick_sort.c|Noted for being, as the name implies, significantly quicker than its main competitor algorithms.|
+|100-shell_sort.c|An optimization of insertion sort, shell sort works as a compromise between inserting and swapping by moving elements long distances towards their correct area, and then swapping to achieve a sorted list|
+|101-cocktail_sort_list.c|A sorting algorithm very similar to bubble sort, but instead of the 'cursor' only moving left to right, it moves both directions|
+|102-counting_sort.c|Counting sort is an integer sorting algorithm that sorts by using key values as indexes|
+|103-merge_sort.c|***|
+|104-heap_sort.c|Heap sort is sometimes thought of as an improved selection sort, and works by maintaining the unsorted data in a heap data structure, to improve the time it takes to find the largest element|
+|105-radix_sort.c|Radix sort is an algorithm that does not compare, but instead creates and distributes elements according to their radix|
+|106-bitonic_sort.c|***|
+|107-quick_sort_hoare.c|***|
+|1000-sort_deck.c|In this task, the insertion sort algorithm was chosen due to ease of implementation and the consistent, somewhat small data set. It works by sorting first by suit, then by value|
